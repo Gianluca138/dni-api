@@ -17,6 +17,11 @@ app.use("/dnis", express.static(path.join(__dirname, "public/dnis")));
 app.use("/api/dni", dniRoutes);
 app.use("/avatar", avatar);
 
+// Ruta de prueba
+app.get("/test", (req, res) => {
+    res.send("API funcionando");
+});
+
 // Puerto de Render o 3000 si es local
 const PORT = process.env.PORT || 3000;
 
