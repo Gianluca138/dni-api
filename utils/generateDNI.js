@@ -20,53 +20,53 @@ async function generateDNI(data) {
 );
 
     const POS = {
-        foto: {
-            x: 30,
-            y: 245,
-            w: 400,
-            h: 420
-        },
+    foto: {
+        x: 30,
+        y: 245,
+        w: 400,
+        h: 420
+    },
 
-        apellido: {
-            x: 455,
-            y: 220
-        },
+    apellido: {
+        x: 455,
+        y: 205
+    },
 
-        nombre: {
-            x: 455,
-            y: 365
-        },
+    nombre: {
+        x: 455,
+        y: 330
+    },
 
-        sexo: {
-            x: 405,
-            y: 520
-        },
+    sexo: {
+        x: 455,
+        y: 500
+    },
 
-        nacionalidad: {
-            x: 560,
-            y: 520
-        },
+    nacionalidad: {
+        x: 650,
+        y: 500
+    },
 
-        nacimiento: {
-            x: 930,
-            y: 520
-        },
+    nacimiento: {
+        x: 930,
+        y: 500
+    },
 
-        documento: {
-            x: 90,
-            y: 710
-        },
+    documento: {
+        x: 110,
+        y: 670
+    },
 
-        emision: {
-            x: 455,
-            y: 705
-        },
+    emision: {
+        x: 455,
+        y: 670
+    },
 
-        vencimiento: {
-            x: 820,
-            y: 705
-        }
-    };
+    vencimiento: {
+        x: 820,
+        y: 670
+    }
+};
 
     // Dibujar foto
     ctx.drawImage(
@@ -91,14 +91,15 @@ async function generateDNI(data) {
     ctx.textBaseline = "top";
 
     // Apellido
-    ctx.font = "bold 42px Arial";
+    ctx.font = "bold 38px Arial";
     ctx.fillText(data.apellido, POS.apellido.x, POS.apellido.y);
 
     // Nombre
-    ctx.fillText(data.nombre, POS.nombre.x, POS.nombre.y);
+    ctx.font = "bold 42px Arial";
+ctx.fillText(data.nombre, POS.nombre.x, POS.nombre.y);
 
     // Sexo
-    ctx.font = "bold 34px Arial";
+    ctx.font = "bold 30px Arial";
     ctx.fillText(data.sexo, POS.sexo.x, POS.sexo.y);
 
     // Nacionalidad
@@ -112,7 +113,7 @@ async function generateDNI(data) {
     ctx.fillText(data.documento, POS.documento.x, POS.documento.y);
 
     // Emisión
-    ctx.font = "bold 34px Arial";
+    ctx.font = "bold 38px Arial";
     ctx.fillText(emision, POS.emision.x, POS.emision.y);
 
     // Vencimiento
