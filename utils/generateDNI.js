@@ -16,8 +16,8 @@ async function generateDNI(data) {
 
     // Avatar desde tu API
     const foto = await loadImage(
-        `http://localhost:3000/avatar/${data.robloxId}`
-    );
+    `https://dni-api-h5jr.onrender.com/avatar/${data.robloxId}`
+);
 
     const POS = {
         foto: {
