@@ -21,7 +21,7 @@ const image = await generateDNI({
 
         res.json({
             success: true,
-            image: `http://localhost:3000${image}`
+            image: `https://dni-api-h5jr.onrender.com${image}`
         });
 
     } catch(err){
