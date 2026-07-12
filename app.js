@@ -1,4 +1,3 @@
-const axios = require("axios");
 const express = require("express");
 const cors = require("cors");
 const path = require("path");
@@ -18,8 +17,9 @@ app.use("/dnis", express.static(path.join(__dirname, "public/dnis")));
 app.use("/api/dni", dniRoutes);
 app.use("/avatar", avatar);
 
-const PORT = 3000;
+// Puerto de Render o 3000 si es local
+const PORT = process.env.PORT || 3000;
 
-app.listen(PORT, () => {
-    console.log(`API iniciada en http://localhost:${PORT}`);
+app.listen(PORT, "0.0.0.0", () => {
+    console.log(`API iniciada en el puerto ${PORT}`);
 });
