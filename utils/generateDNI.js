@@ -47,19 +47,19 @@ const POS = {
         // Centrado debajo de "Sexo"
         sexo: {
             x: 560, // Centrado bajo el título de sexo
-            y: 565  
+            y: 625  
         },
 
         // Centrado debajo de "Nacionalidad"
         nacionalidad: {
             x: 565, // Ajustado para que "Argentina" no toque los otros textos
-            y: 730  
+            y: 625  
         },
 
         // Centrado debajo de "Fecha de nacimiento"
         nacimiento: {
             x: 1200, // Centrado justo debajo del título de nacimiento
-            y: 565  
+            y: 625  
         },
 
         // Número de documento (abajo de la foto, centrado)
