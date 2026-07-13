@@ -24,7 +24,7 @@ async function generateDNI(data) {
 
     const foto = await loadImage(avatarURL);
 
-    const POS = {
+const POS = {
         foto: {
             x: 30,
             y: 245,
@@ -34,50 +34,50 @@ async function generateDNI(data) {
 
         // Debajo de "Apellido/Surname"
         apellido: {
-            x: 265, // Movido a la izquierda para alinearse con el inicio de la línea
-            y: 265  // Bajado para quedar debajo de "Apellido/Surname"
+            x: 295, // Movido más a la derecha para salir de la foto del avatar
+            y: 310  // Ajustado para que quede justo debajo de "Apellido/Surname"
         },
 
         // Debajo de "Nombre/Name"
         nombre: {
-            x: 265, // Movido a la izquierda
-            y: 395  // Bajado para quedar debajo de "Nombre/Name"
+            x: 295, // Alineado con el apellido
+            y: 430  // Ajustado para que quede justo debajo de "Nombre/Name"
         },
 
         // Debajo de "Sexo"
         sexo: {
-            x: 265, // Movido a la izquierda
-            y: 540  // Bajado para quedar debajo de "Sexo"
+            x: 295, // Alineado a la izquierda
+            y: 590  // Bajado para quedar debajo de "Sexo/Sex"
         },
 
         // Debajo de "Nacionalidad"
         nacionalidad: {
-            x: 390, // Ajustado para centrarse bajo "Nacionalidad/Nationality"
-            y: 540  // Bajado
+            x: 390, // Centrado bajo "Nacionalidad/Nationality"
+            y: 590  
         },
 
         // Debajo de "Fecha de nacimiento"
         nacimiento: {
-            x: 670, // Ajustado para centrarse bajo "Fecha de nacimiento/Date of birth"
-            y: 540  // Bajado
+            x: 670, // Centrado bajo "Fecha de nacimiento/Date of birth"
+            y: 590  
         },
 
         // Número de documento (abajo de la foto)
         documento: {
             x: 75,
-            y: 720  // Bajado para que no tape la foto del avatar
+            y: 730  // Bajado para que quede centrado debajo de "Documento/Document"
         },
 
         // Debajo de "Fecha de emisión"
         emision: {
-            x: 295, // Ajustado para centrarse bajo "Fecha de emisión"
-            y: 775  // Bajado
+            x: 295, // Centrado bajo "Fecha de emisión"
+            y: 795  // Bajado para no pisar el título "Fecha de emisión/Date of issue"
         },
 
         // Debajo de "Fecha de vencimiento"
         vencimiento: {
-            x: 525, // Ajustado para centrarse bajo "Fecha de vencimiento"
-            y: 775  // Bajado
+            x: 525, // Centrado bajo "Fecha de vencimiento"
+            y: 795  // Bajado para no pisar el título "Fecha de vencimiento/Date of expiry"
         }
     };
 
