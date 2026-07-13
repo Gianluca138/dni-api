@@ -32,51 +32,51 @@ const POS = {
             h: 420
         },
 
-        // Debajo de "Apellido/Surname" (Movido a la derecha)
+        // Debajo de "Apellido/Surname"
         apellido: {
-            x: 400, // Antes: 295 (+105px)
+            x: 320, // Ajustado para que empiece justo debajo del título
             y: 340  
         },
 
-        // Debajo de "Nombre/Name" (Movido a la derecha)
+        // Debajo de "Nombre/Name"
         nombre: {
-            x: 400, // Antes: 295 (+105px)
+            x: 320, // Alineado con el apellido
             y: 465  
         },
 
-        // Debajo de "Sexo" (Movido a la derecha)
+        // Debajo de "Sexo"
         sexo: {
-            x: 380, // Antes: 295 (+85px)
+            x: 305, // Centrado bajo "Sexo/Sex"
             y: 615  
         },
 
-        // Debajo de "Nacionalidad" (Movido a la derecha)
+        // Debajo de "Nacionalidad"
         nacionalidad: {
-            x: 490, // Antes: 390 (+100px)
+            x: 430, // Centrado bajo "Nacionalidad/Nationality"
             y: 615  
         },
 
-        // Debajo de "Fecha de nacimiento" (Movido a la derecha)
+        // Debajo de "Fecha de nacimiento"
         nacimiento: {
-            x: 780, // Antes: 670 (+110px)
+            x: 710, // Centrado bajo "Fecha de nacimiento/Date of birth"
             y: 615  
         },
 
-        // Número de documento (Alineado más a la derecha, debajo del texto "Documento")
+        // Número de documento (abajo de la foto, centrado)
         documento: {
-            x: 140, // Antes: 35 (+105px) para centrarlo bajo "Documento/Document"
+            x: 75,  // Centrado debajo del título "Documento/Document"
             y: 755  
         },
 
-        // Debajo de "Fecha de emisión" (Movido a la derecha)
+        // Debajo de "Fecha de emisión"
         emision: {
-            x: 410, // Antes: 300 (+110px)
+            x: 315, // Centrado bajo "Fecha de emisión/Date of issue"
             y: 825  
         },
 
-        // Debajo de "Fecha de vencimiento" (Movido a la derecha)
+        // Debajo de "Fecha de vencimiento"
         vencimiento: {
-            x: 650, // Antes: 530 (+120px)
+            x: 550, // Centrado bajo "Fecha de vencimiento/Date of expiry"
             y: 825  
         }
     };
