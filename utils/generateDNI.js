@@ -32,52 +32,52 @@ const POS = {
             h: 420
         },
 
-        // Debajo de "Apellido/Surname"
+        // Debajo de "Apellido/Surname" (Movido a la derecha)
         apellido: {
-            x: 295, 
-            y: 340  // Bajado para que no pise el título
+            x: 400, // Antes: 295 (+105px)
+            y: 340  
         },
 
-        // Debajo de "Nombre/Name"
+        // Debajo de "Nombre/Name" (Movido a la derecha)
         nombre: {
-            x: 295, 
-            y: 465  // Bajado para que quede libre el título
+            x: 400, // Antes: 295 (+105px)
+            y: 465  
         },
 
-        // Debajo de "Sexo"
+        // Debajo de "Sexo" (Movido a la derecha)
         sexo: {
-            x: 295, 
-            y: 615  // Bajado para dar espacio a "Sexo/Sex"
+            x: 380, // Antes: 295 (+85px)
+            y: 615  
         },
 
-        // Debajo de "Nacionalidad"
+        // Debajo de "Nacionalidad" (Movido a la derecha)
         nacionalidad: {
-            x: 390, 
-            y: 615  // Bajado para alinearse con el sexo
+            x: 490, // Antes: 390 (+100px)
+            y: 615  
         },
 
-        // Debajo de "Fecha de nacimiento"
+        // Debajo de "Fecha de nacimiento" (Movido a la derecha)
         nacimiento: {
-            x: 670, 
-            y: 615  // Bajado para alinearse con los demás datos de esa fila
+            x: 780, // Antes: 670 (+110px)
+            y: 615  
         },
 
-        // Número de documento (abajo de la foto)
+        // Número de documento (Alineado más a la derecha, debajo del texto "Documento")
         documento: {
-            x: 35,  // Movido un poco a la izquierda para que no toque la bandera
-            y: 755  // Bajado para que no tape la palabra "Documento"
+            x: 140, // Antes: 35 (+105px) para centrarlo bajo "Documento/Document"
+            y: 755  
         },
 
-        // Debajo de "Fecha de emisión"
+        // Debajo de "Fecha de emisión" (Movido a la derecha)
         emision: {
-            x: 300, 
-            y: 825  // Bajado para que quede debajo de "Fecha de emisión"
+            x: 410, // Antes: 300 (+110px)
+            y: 825  
         },
 
-        // Debajo de "Fecha de vencimiento"
+        // Debajo de "Fecha de vencimiento" (Movido a la derecha)
         vencimiento: {
-            x: 530, 
-            y: 825  // Bajado para que quede debajo de "Fecha de vencimiento"
+            x: 650, // Antes: 530 (+120px)
+            y: 825  
         }
     };
 
