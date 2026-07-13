@@ -35,49 +35,49 @@ const POS = {
         // Centrado debajo de "Apellido/Surname"
         apellido: {
             x: 560, // Ajustado al centro del espacio de texto
-            y: 295 
+            y: 305
         },
 
         // Centrado debajo de "Nombre/Name"
         nombre: {
-            x: 350, // Alineado con el apellido
+            x: 560, // Alineado con el apellido
             y: 465  
         },
 
         // Centrado debajo de "Sexo"
         sexo: {
-            x: 310, // Centrado bajo el título de sexo
-            y: 615  
+            x: 560, // Centrado bajo el título de sexo
+            y: 565  
         },
 
         // Centrado debajo de "Nacionalidad"
         nacionalidad: {
-            x: 450, // Ajustado para que "Argentina" no toque los otros textos
-            y: 615  
+            x: 565, // Ajustado para que "Argentina" no toque los otros textos
+            y: 730  
         },
 
         // Centrado debajo de "Fecha de nacimiento"
         nacimiento: {
-            x: 720, // Centrado justo debajo del título de nacimiento
-            y: 615  
+            x: 1200, // Centrado justo debajo del título de nacimiento
+            y: 565  
         },
 
         // Número de documento (abajo de la foto, centrado)
         documento: {
-            x: 85,  // Centrado justo debajo de "Documento/Document"
-            y: 755  
+            x: 35,  // Centrado justo debajo de "Documento/Document"
+            y: 790  
         },
 
         // Centrado debajo de "Fecha de emisión"
         emision: {
-            x: 330, // Centrado bajo el título de emisión
-            y: 825  
+            x: 560, // Centrado bajo el título de emisión
+            y: 845  
         },
 
         // Centrado debajo de "Fecha de vencimiento"
         vencimiento: {
-            x: 560, // Centrado bajo el título de vencimiento
-            y: 825  
+            x: 980, // Centrado bajo el título de vencimiento
+            y: 845  
         }
     };
 
