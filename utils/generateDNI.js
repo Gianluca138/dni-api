@@ -46,38 +46,38 @@ const POS = {
 
         // Centrado debajo de "Sexo"
         sexo: {
-            x: 555, // Centrado bajo el título de sexo
+            x: 550, // Centrado bajo el título de sexo
             y: 650  
         },
 
         // Centrado debajo de "Nacionalidad"
         nacionalidad: {
-            x: 600, // Ajustado para que "Argentina" no toque los otros textos
+            x: 650, // Ajustado para que "Argentina" no toque los otros textos
             y: 650  
         },
 
         // Centrado debajo de "Fecha de nacimiento"
         nacimiento: {
             x: 1200, // Centrado justo debajo del título de nacimiento
-            y: 650  
+            y: 655  
         },
 
         // Número de documento (abajo de la foto, centrado)
         documento: {
-            x: 35,  // Centrado justo debajo de "Documento/Document"
+            x: 50,  // Centrado justo debajo de "Documento/Document"
             y: 790  
         },
 
         // Centrado debajo de "Fecha de emisión"
         emision: {
             x: 560, // Centrado bajo el título de emisión
-            y: 845  
+            y: 860 
         },
 
         // Centrado debajo de "Fecha de vencimiento"
         vencimiento: {
             x: 980, // Centrado bajo el título de vencimiento
-            y: 845  
+            y: 860  
         }
     };
 
