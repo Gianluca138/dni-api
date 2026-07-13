@@ -3,86 +3,77 @@ const fs = require("fs");
 const path = require("path");
 
 async function generateDNI(data) {
-
-    console.log("Generando DNI...");
+    console.log("========== GENERANDO DNI ==========");
     console.log(data);
 
     // Plantilla
-    console.log("Cargando plantilla...");
+    const plantilla = path.join(__dirname, "../templates/dni-distrito.png");
+    console.log("Plantilla:", plantilla);
 
-    const fondo = await loadImage(
-        path.join(__dirname, "../templates/dni-distrito.png")
-    );
-
-    console.log("Plantilla cargada");
+    const fondo = await loadImage(plantilla);
 
     const canvas = createCanvas(fondo.width, fondo.height);
     const ctx = canvas.getContext("2d");
 
     ctx.drawImage(fondo, 0, 0);
 
+    // Avatar
+    const avatarURL = `https://dni-api-h5jr.onrender.com/avatar/${data.robloxId}`;
 
-    // Avatar Roblox
-    console.log("Cargando avatar:", data.robloxId);
+    console.log("Avatar:", avatarURL);
 
-    const foto = await loadImage(
-        `https://dni-api-h5jr.onrender.com/avatar/${data.robloxId}`
-    );
-
-    console.log("Avatar cargado");
-
+    const foto = await loadImage(avatarURL);
 
     const POS = {
-    foto: {
-        x: 30,
-        y: 245,
-        w: 400,
-        h: 420
-    },
+        foto: {
+            x: 30,
+            y: 245,
+            w: 400,
+            h: 420
+        },
 
-    apellido: {
-        x: 455,
-        y: 170
-    },
+        apellido: {
+            x: 455,
+            y: 170
+        },
 
-    nombre: {
-        x: 455,
-        y: 295
-    },
+        nombre: {
+            x: 455,
+            y: 295
+        },
 
-    sexo: {
-        x: 455,
-        y: 470
-    },
+        sexo: {
+            x: 455,
+            y: 470
+        },
 
-    nacionalidad: {
-        x: 650,
-        y: 470
-    },
+        nacionalidad: {
+            x: 650,
+            y: 470
+        },
 
-    nacimiento: {
-        x: 1030,
-        y: 470
-    },
+        nacimiento: {
+            x: 1030,
+            y: 470
+        },
 
-    documento: {
-        x: 110,
-        y: 620
-    },
+        documento: {
+            x: 110,
+            y: 620
+        },
 
-    emision: {
-        x: 455,
-        y: 620
-    },
+        emision: {
+            x: 455,
+            y: 620
+        },
 
-    vencimiento: {
-        x: 820,
-        y: 620
-    }
-};
+        vencimiento: {
+            x: 820,
+            y: 620
+        }
+    };
 
-
-    // Dibujar foto
+    // Foto
 
     ctx.drawImage(
         foto,
@@ -92,87 +83,36 @@ async function generateDNI(data) {
         POS.foto.h
     );
 
+    // Texto
 
-    // Fechas
+    ctx.fillStyle = "#111";
+    ctx.textBaseline = "top";
+
+    ctx.font = "bold 32px Arial";
+    ctx.fillText(data.apellido || "", POS.apellido.x, POS.apellido.y);
+
+    ctx.font = "bold 34px Arial";
+    ctx.fillText(data.nombre || "", POS.nombre.x, POS.nombre.y);
+
+    ctx.font = "bold 30px Arial";
+    ctx.fillText(data.sexo || "", POS.sexo.x, POS.sexo.y);
+
+    ctx.fillText(data.nacionalidad || "", POS.nacionalidad.x, POS.nacionalidad.y);
+
+    ctx.fillText(data.nacimiento || "", POS.nacimiento.x, POS.nacimiento.y);
+
+    ctx.font = "bold 36px Arial";
+    ctx.fillText(data.documento || "", POS.documento.x, POS.documento.y);
 
     const hoy = new Date();
 
     const emision = hoy.toLocaleDateString("es-AR");
 
     const vencimiento = new Date(hoy);
+
     vencimiento.setFullYear(vencimiento.getFullYear() + 4);
 
-    const vencimientoTexto = vencimiento.toLocaleDateString("es-AR");
-
-
-    ctx.fillStyle = "#111";
-    ctx.textBaseline = "top";
-
-
-    // Apellido
-
-    ctx.font = "bold 38px Arial";
-    ctx.fillText(
-        data.apellido || "",
-        POS.apellido.x,
-        POS.apellido.y
-    );
-
-
-    // Nombre
-
-    ctx.font = "bold 42px Arial";
-
-    ctx.fillText(
-        data.nombre || "",
-        POS.nombre.x,
-        POS.nombre.y
-    );
-
-
-    // Sexo
-
-    ctx.font = "bold 30px Arial";
-
-    ctx.fillText(
-        data.sexo || "",
-        POS.sexo.x,
-        POS.sexo.y
-    );
-
-
-    // Nacionalidad
-
-    ctx.fillText(
-        data.nacionalidad || "",
-        POS.nacionalidad.x,
-        POS.nacionalidad.y
-    );
-
-
-    // Nacimiento
-
-    ctx.fillText(
-        data.nacimiento || "",
-        POS.nacimiento.x,
-        POS.nacimiento.y
-    );
-
-
-    // Documento
-
-    ctx.font = "bold 48px Arial";
-
-    ctx.fillText(
-        data.documento || "",
-        POS.documento.x,
-        POS.documento.y
-    );
-
-
-    // Emisión
-
-    ctx.font = "bold 38px Arial";
+    ctx.font = "bold 32px Arial";
 
     ctx.fillText(
         emision,
@@ -180,23 +120,15 @@ async function generateDNI(data) {
         POS.emision.y
     );
 
-
-    // Vencimiento
-
     ctx.fillText(
-        vencimientoTexto,
+        vencimiento.toLocaleDateString("es-AR"),
         POS.vencimiento.x,
         POS.vencimiento.y
     );
 
+    // Crear carpeta
 
-    // Guardar imagen
-
-    const carpeta = path.join(
-        __dirname,
-        "../public/dnis"
-    );
-
+    const carpeta = path.join(__dirname, "../public/dnis");
 
     if (!fs.existsSync(carpeta)) {
         fs.mkdirSync(carpeta, {
@@ -204,24 +136,27 @@ async function generateDNI(data) {
         });
     }
 
+    const archivo = `${data.documento}.png`;
 
-    const salida = path.join(
-        carpeta,
-        `${data.documento}.png`
-    );
+    const salida = path.join(carpeta, archivo);
 
+    console.log("Guardando en:");
+    console.log(salida);
 
     fs.writeFileSync(
         salida,
         canvas.toBuffer("image/png")
     );
 
+    console.log("¿Existe?");
+    console.log(fs.existsSync(salida));
 
-    console.log("DNI creado:", salida);
+    console.log("Archivos:");
+    console.log(fs.readdirSync(carpeta));
 
+    console.log("========== DNI TERMINADO ==========");
 
-    return `/dnis/${data.documento}.png`;
+    return `/dnis/${archivo}`;
 }
-
 
 module.exports = generateDNI;
