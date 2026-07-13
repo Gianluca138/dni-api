@@ -26,7 +26,7 @@ async function generateDNI(data) {
 
 const POS = {
         foto: {
-            x: 30,
+            x: 45,
             y: 245,
             w: 400,
             h: 420
@@ -46,13 +46,13 @@ const POS = {
 
         // Centrado debajo de "Sexo"
         sexo: {
-            x: 545, // Centrado bajo el título de sexo
+            x: 540, // Centrado bajo el título de sexo
             y: 665  
         },
 
         // Centrado debajo de "Nacionalidad"
         nacionalidad: {
-            x: 670, // Ajustado para que "Argentina" no toque los otros textos
+            x: 675, // Ajustado para que "Argentina" no toque los otros textos
             y: 665  
         },
 
@@ -64,7 +64,7 @@ const POS = {
 
         // Número de documento (abajo de la foto, centrado)
         documento: {
-            x: 75,  // Centrado justo debajo de "Documento/Document"
+            x: 110,  // Centrado justo debajo de "Documento/Document"
             y: 790  
         },
 
