@@ -64,20 +64,20 @@ const POS = {
 
         // Número de documento (abajo de la foto, centrado)
         documento: {
-            x: 110,  // Centrado justo debajo de "Documento/Document"
+            x: 120,  // Centrado justo debajo de "Documento/Document"
             y: 790  
         },
 
         // Centrado debajo de "Fecha de emisión"
         emision: {
             x: 560, // Centrado bajo el título de emisión
-            y: 875 
+            y: 880 
         },
 
         // Centrado debajo de "Fecha de vencimiento"
         vencimiento: {
             x: 980, // Centrado bajo el título de vencimiento
-            y: 875  
+            y: 880  
         }
     };
 
@@ -120,7 +120,7 @@ const POS = {
 
     vencimiento.setFullYear(vencimiento.getFullYear() + 4);
 
-    ctx.font = "bold 32px Arial";
+    ctx.font = "bold 38px Arial";
 
     ctx.fillText(
         emision,
