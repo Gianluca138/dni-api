@@ -32,51 +32,51 @@ const POS = {
             h: 420
         },
 
-        // Debajo de "Apellido/Surname"
+        // Centrado debajo de "Apellido/Surname"
         apellido: {
-            x: 320, // Ajustado para que empiece justo debajo del título
+            x: 350, // Ajustado al centro del espacio de texto
             y: 340  
         },
 
-        // Debajo de "Nombre/Name"
+        // Centrado debajo de "Nombre/Name"
         nombre: {
-            x: 320, // Alineado con el apellido
+            x: 350, // Alineado con el apellido
             y: 465  
         },
 
-        // Debajo de "Sexo"
+        // Centrado debajo de "Sexo"
         sexo: {
-            x: 305, // Centrado bajo "Sexo/Sex"
+            x: 310, // Centrado bajo el título de sexo
             y: 615  
         },
 
-        // Debajo de "Nacionalidad"
+        // Centrado debajo de "Nacionalidad"
         nacionalidad: {
-            x: 430, // Centrado bajo "Nacionalidad/Nationality"
+            x: 450, // Ajustado para que "Argentina" no toque los otros textos
             y: 615  
         },
 
-        // Debajo de "Fecha de nacimiento"
+        // Centrado debajo de "Fecha de nacimiento"
         nacimiento: {
-            x: 710, // Centrado bajo "Fecha de nacimiento/Date of birth"
+            x: 720, // Centrado justo debajo del título de nacimiento
             y: 615  
         },
 
         // Número de documento (abajo de la foto, centrado)
         documento: {
-            x: 75,  // Centrado debajo del título "Documento/Document"
+            x: 85,  // Centrado justo debajo de "Documento/Document"
             y: 755  
         },
 
-        // Debajo de "Fecha de emisión"
+        // Centrado debajo de "Fecha de emisión"
         emision: {
-            x: 315, // Centrado bajo "Fecha de emisión/Date of issue"
+            x: 330, // Centrado bajo el título de emisión
             y: 825  
         },
 
-        // Debajo de "Fecha de vencimiento"
+        // Centrado debajo de "Fecha de vencimiento"
         vencimiento: {
-            x: 550, // Centrado bajo "Fecha de vencimiento/Date of expiry"
+            x: 560, // Centrado bajo el título de vencimiento
             y: 825  
         }
     };
