@@ -34,50 +34,50 @@ const POS = {
 
         // Debajo de "Apellido/Surname"
         apellido: {
-            x: 295, // Movido más a la derecha para salir de la foto del avatar
-            y: 310  // Ajustado para que quede justo debajo de "Apellido/Surname"
+            x: 295, 
+            y: 340  // Bajado para que no pise el título
         },
 
         // Debajo de "Nombre/Name"
         nombre: {
-            x: 295, // Alineado con el apellido
-            y: 430  // Ajustado para que quede justo debajo de "Nombre/Name"
+            x: 295, 
+            y: 465  // Bajado para que quede libre el título
         },
 
         // Debajo de "Sexo"
         sexo: {
-            x: 295, // Alineado a la izquierda
-            y: 590  // Bajado para quedar debajo de "Sexo/Sex"
+            x: 295, 
+            y: 615  // Bajado para dar espacio a "Sexo/Sex"
         },
 
         // Debajo de "Nacionalidad"
         nacionalidad: {
-            x: 390, // Centrado bajo "Nacionalidad/Nationality"
-            y: 590  
+            x: 390, 
+            y: 615  // Bajado para alinearse con el sexo
         },
 
         // Debajo de "Fecha de nacimiento"
         nacimiento: {
-            x: 670, // Centrado bajo "Fecha de nacimiento/Date of birth"
-            y: 590  
+            x: 670, 
+            y: 615  // Bajado para alinearse con los demás datos de esa fila
         },
 
         // Número de documento (abajo de la foto)
         documento: {
-            x: 75,
-            y: 730  // Bajado para que quede centrado debajo de "Documento/Document"
+            x: 35,  // Movido un poco a la izquierda para que no toque la bandera
+            y: 755  // Bajado para que no tape la palabra "Documento"
         },
 
         // Debajo de "Fecha de emisión"
         emision: {
-            x: 295, // Centrado bajo "Fecha de emisión"
-            y: 795  // Bajado para no pisar el título "Fecha de emisión/Date of issue"
+            x: 300, 
+            y: 825  // Bajado para que quede debajo de "Fecha de emisión"
         },
 
         // Debajo de "Fecha de vencimiento"
         vencimiento: {
-            x: 525, // Centrado bajo "Fecha de vencimiento"
-            y: 795  // Bajado para no pisar el título "Fecha de vencimiento/Date of expiry"
+            x: 530, 
+            y: 825  // Bajado para que quede debajo de "Fecha de vencimiento"
         }
     };
 
