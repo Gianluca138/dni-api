@@ -19,11 +19,7 @@ const image = await generateDNI({
     robloxId: body.robloxId
 });
 
-        res.json({
-            success: true,
-            image: `https://dni-api-h5jr.onrender.com${image}`
-        });
-
+        res.send(`https://dni-api-h5jr.onrender.com${image}`);
     } catch(err){
 
         console.error(err);
