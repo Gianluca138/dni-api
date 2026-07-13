@@ -32,44 +32,52 @@ async function generateDNI(data) {
             h: 420
         },
 
+        // Debajo de "Apellido/Surname"
         apellido: {
-            x: 455,
-            y: 170
+            x: 265, // Movido a la izquierda para alinearse con el inicio de la línea
+            y: 265  // Bajado para quedar debajo de "Apellido/Surname"
         },
 
+        // Debajo de "Nombre/Name"
         nombre: {
-            x: 455,
-            y: 295
+            x: 265, // Movido a la izquierda
+            y: 395  // Bajado para quedar debajo de "Nombre/Name"
         },
 
+        // Debajo de "Sexo"
         sexo: {
-            x: 455,
-            y: 470
+            x: 265, // Movido a la izquierda
+            y: 540  // Bajado para quedar debajo de "Sexo"
         },
 
+        // Debajo de "Nacionalidad"
         nacionalidad: {
-            x: 650,
-            y: 470
+            x: 390, // Ajustado para centrarse bajo "Nacionalidad/Nationality"
+            y: 540  // Bajado
         },
 
+        // Debajo de "Fecha de nacimiento"
         nacimiento: {
-            x: 1030,
-            y: 470
+            x: 670, // Ajustado para centrarse bajo "Fecha de nacimiento/Date of birth"
+            y: 540  // Bajado
         },
 
+        // Número de documento (abajo de la foto)
         documento: {
-            x: 110,
-            y: 620
+            x: 75,
+            y: 720  // Bajado para que no tape la foto del avatar
         },
 
+        // Debajo de "Fecha de emisión"
         emision: {
-            x: 455,
-            y: 620
+            x: 295, // Ajustado para centrarse bajo "Fecha de emisión"
+            y: 775  // Bajado
         },
 
+        // Debajo de "Fecha de vencimiento"
         vencimiento: {
-            x: 820,
-            y: 620
+            x: 525, // Ajustado para centrarse bajo "Fecha de vencimiento"
+            y: 775  // Bajado
         }
     };
 
@@ -88,20 +96,20 @@ async function generateDNI(data) {
     ctx.fillStyle = "#111";
     ctx.textBaseline = "top";
 
-    ctx.font = "bold 32px Arial";
+    ctx.font = "bold 36px Arial";
     ctx.fillText(data.apellido || "", POS.apellido.x, POS.apellido.y);
 
-    ctx.font = "bold 34px Arial";
+    ctx.font = "bold 36px Arial";
     ctx.fillText(data.nombre || "", POS.nombre.x, POS.nombre.y);
 
-    ctx.font = "bold 30px Arial";
+    ctx.font = "bold 36px Arial";
     ctx.fillText(data.sexo || "", POS.sexo.x, POS.sexo.y);
 
     ctx.fillText(data.nacionalidad || "", POS.nacionalidad.x, POS.nacionalidad.y);
 
     ctx.fillText(data.nacimiento || "", POS.nacimiento.x, POS.nacimiento.y);
 
-    ctx.font = "bold 36px Arial";
+    ctx.font = "bold 38px Arial";
     ctx.fillText(data.documento || "", POS.documento.x, POS.documento.y);
 
     const hoy = new Date();
