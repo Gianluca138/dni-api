@@ -34,8 +34,8 @@ const POS = {
 
         // Centrado debajo de "Apellido/Surname"
         apellido: {
-            x: 350, // Ajustado al centro del espacio de texto
-            y: 340  
+            x: 380, // Ajustado al centro del espacio de texto
+            y: 360  
         },
 
         // Centrado debajo de "Nombre/Name"
