@@ -46,38 +46,38 @@ const POS = {
 
         // Centrado debajo de "Sexo"
         sexo: {
-            x: 550, // Centrado bajo el título de sexo
-            y: 650  
+            x: 545, // Centrado bajo el título de sexo
+            y: 665  
         },
 
         // Centrado debajo de "Nacionalidad"
         nacionalidad: {
-            x: 650, // Ajustado para que "Argentina" no toque los otros textos
-            y: 650  
+            x: 670, // Ajustado para que "Argentina" no toque los otros textos
+            y: 665  
         },
 
         // Centrado debajo de "Fecha de nacimiento"
         nacimiento: {
             x: 1200, // Centrado justo debajo del título de nacimiento
-            y: 655  
+            y: 675  
         },
 
         // Número de documento (abajo de la foto, centrado)
         documento: {
-            x: 50,  // Centrado justo debajo de "Documento/Document"
+            x: 75,  // Centrado justo debajo de "Documento/Document"
             y: 790  
         },
 
         // Centrado debajo de "Fecha de emisión"
         emision: {
             x: 560, // Centrado bajo el título de emisión
-            y: 860 
+            y: 875 
         },
 
         // Centrado debajo de "Fecha de vencimiento"
         vencimiento: {
             x: 980, // Centrado bajo el título de vencimiento
-            y: 860  
+            y: 875  
         }
     };
 
@@ -96,20 +96,20 @@ const POS = {
     ctx.fillStyle = "#111";
     ctx.textBaseline = "top";
 
-    ctx.font = "bold 36px Arial";
+    ctx.font = "bold 38px Arial";
     ctx.fillText(data.apellido || "", POS.apellido.x, POS.apellido.y);
 
-    ctx.font = "bold 36px Arial";
+    ctx.font = "bold 38px Arial";
     ctx.fillText(data.nombre || "", POS.nombre.x, POS.nombre.y);
 
-    ctx.font = "bold 36px Arial";
+    ctx.font = "bold 38px Arial";
     ctx.fillText(data.sexo || "", POS.sexo.x, POS.sexo.y);
 
     ctx.fillText(data.nacionalidad || "", POS.nacionalidad.x, POS.nacionalidad.y);
 
     ctx.fillText(data.nacimiento || "", POS.nacimiento.x, POS.nacimiento.y);
 
-    ctx.font = "bold 38px Arial";
+    ctx.font = "bold 40px Arial";
     ctx.fillText(data.documento || "", POS.documento.x, POS.documento.y);
 
     const hoy = new Date();
