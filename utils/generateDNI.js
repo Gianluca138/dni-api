@@ -96,21 +96,23 @@ const POS = {
     ctx.fillStyle = "#111";
     ctx.textBaseline = "top";
 
-    ctx.font = "bold 38px Arial";
-    ctx.fillText(data.apellido || "", POS.apellido.x, POS.apellido.y);
+ctx.font = "38px Roboto";
+ctx.fillText(data.apellido || "", POS.apellido.x, POS.apellido.y);
 
-    ctx.font = "bold 38px Arial";
-    ctx.fillText(data.nombre || "", POS.nombre.x, POS.nombre.y);
+ctx.font = "38px Roboto";
+ctx.fillText(data.nombre || "", POS.nombre.x, POS.nombre.y);
 
-    ctx.font = "bold 38px Arial";
-    ctx.fillText(data.sexo || "", POS.sexo.x, POS.sexo.y);
+ctx.font = "38px Roboto";
+ctx.fillText(data.sexo || "", POS.sexo.x, POS.sexo.y);
 
-    ctx.fillText(data.nacionalidad || "", POS.nacionalidad.x, POS.nacionalidad.y);
+ctx.font = "38px Roboto";
+ctx.fillText(data.nacionalidad || "", POS.nacionalidad.x, POS.nacionalidad.y);
 
-    ctx.fillText(data.nacimiento || "", POS.nacimiento.x, POS.nacimiento.y);
+ctx.font = "38px Roboto";
+ctx.fillText(data.nacimiento || "", POS.nacimiento.x, POS.nacimiento.y);
 
-    ctx.font = "bold 40px Arial";
-    ctx.fillText(data.documento || "", POS.documento.x, POS.documento.y);
+ctx.font = "40px Roboto";
+ctx.fillText(data.documento || "", POS.documento.x, POS.documento.y);
 
     const hoy = new Date();
 
@@ -120,7 +122,7 @@ const POS = {
 
     vencimiento.setFullYear(vencimiento.getFullYear() + 4);
 
-    ctx.font = "bold 38px Arial";
+    ctx.font = "bold 38px Roboto";
 
     ctx.fillText(
         emision,
