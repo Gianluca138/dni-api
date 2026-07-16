@@ -34,50 +34,50 @@ const POS = {
 
         // Centrado debajo de "Apellido/Surname"
         apellido: {
-            x: 560, // Ajustado al centro del espacio de texto
-            y: 305
+            x: 508, // Ajustado al centro del espacio de texto
+            y: 287
         },
 
         // Centrado debajo de "Nombre/Name"
         nombre: {
-            x: 560, // Alineado con el apellido
-            y: 465  
+            x: 508, // Alineado con el apellido
+            y: 449  
         },
 
         // Centrado debajo de "Sexo"
         sexo: {
-            x: 540, // Centrado bajo el título de sexo
-            y: 665  
+            x: 508, // Centrado bajo el título de sexo
+            y: 668 
         },
 
         // Centrado debajo de "Nacionalidad"
         nacionalidad: {
-            x: 675, // Ajustado para que "Argentina" no toque los otros textos
-            y: 665  
+            x: 673, // Ajustado para que "Argentina" no toque los otros textos
+            y: 673  
         },
 
         // Centrado debajo de "Fecha de nacimiento"
         nacimiento: {
-            x: 1200, // Centrado justo debajo del título de nacimiento
-            y: 675  
+            x: 1155, // Centrado justo debajo del título de nacimiento
+            y: 772  
         },
 
         // Número de documento (abajo de la foto, centrado)
         documento: {
-            x: 120,  // Centrado justo debajo de "Documento/Document"
+            x: 165,  // Centrado justo debajo de "Documento/Document"
             y: 790  
         },
 
         // Centrado debajo de "Fecha de emisión"
         emision: {
-            x: 560, // Centrado bajo el título de emisión
-            y: 880 
+            x: 508, // Centrado bajo el título de emisión
+            y: 886
         },
 
         // Centrado debajo de "Fecha de vencimiento"
         vencimiento: {
-            x: 980, // Centrado bajo el título de vencimiento
-            y: 880  
+            x: 909, // Centrado bajo el título de vencimiento
+            y: 884  
         }
     };
 
