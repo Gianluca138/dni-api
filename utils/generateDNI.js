@@ -46,8 +46,8 @@ const POS = {
 
         // Centrado debajo de "Sexo"
         sexo: {
-            x: 508, // Centrado bajo el título de sexo
-            y: 668 
+            x: 545, // Centrado bajo el título de sexo
+            y: 665 
         },
 
         // Centrado debajo de "Nacionalidad"
@@ -58,8 +58,8 @@ const POS = {
 
         // Centrado debajo de "Fecha de nacimiento"
         nacimiento: {
-            x: 1155, // Centrado justo debajo del título de nacimiento
-            y: 772  
+            x: 1200, // Centrado justo debajo del título de nacimiento
+            y: 665  
         },
 
         // Número de documento (abajo de la foto, centrado)
